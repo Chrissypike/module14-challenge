@@ -1,12 +1,6 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-// Add a log to see if ENVs are being added properly
-console.log("process.env.DB_NAME: ", process.env.DB_NAME)
-console.log("process.env.DB_USER: ", process.env.DB_USER)
-console.log("process.env.DB_PASSWORD: ", process.env.DB_PASSWORD)
-console.log("process.env.JAWSDB_URL: ", process.env.JAWSDB_URL)
-
 let sequelize;
 
 if (process.env.JAWSDB_URL) {
