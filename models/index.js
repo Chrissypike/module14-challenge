@@ -7,11 +7,11 @@ User.hasMany(Posts, {
     foreignKey: 'user_id',
 });
 
-Posts.belongs(User, {
+Posts.belongsTo(User, {
     foreignKey: 'user_id',
 });
 
-Comments.BelongsToMany(User, Posts, {
+Comments.belongsTo(User, {
     foreignKey: 'user_id',
     onDelete: 'CASCADE',
     hooks: true,
